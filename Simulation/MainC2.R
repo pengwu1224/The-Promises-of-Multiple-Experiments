@@ -1,7 +1,6 @@
 # Encoding: UTF-8
 
 rm(list = ls( )) 
-setwd('~/Desktop/MultipleExp/Simulation-v2')
 library(dplyr)
 
 # ------------------------ Setup   -----------------------------
