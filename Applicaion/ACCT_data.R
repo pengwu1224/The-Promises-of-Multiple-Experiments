@@ -4,7 +4,6 @@ rm(list=ls(all=TRUE))
 library(jointseg)
 library(lsei)
 library(dplyr)
-setwd('~/Desktop/MultipleExp/Application')
 
 
 # ===================== Real Data (ACCTs data)   ============================
