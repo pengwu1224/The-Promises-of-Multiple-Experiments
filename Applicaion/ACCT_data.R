@@ -438,11 +438,12 @@ lines(1:10, prob.s0.s1[, 2] + 1.96*prob.s0.s1.est.boot[,2],
 
 
 
-
+# ==========================================================================
 # ===================  Evaluation of principal surrogate  ===================
+# ==========================================================================
 
 
-# ----------  Method 1: Based on Assumptions 5,7, and 8 (S1>=S0)   -----------
+# ================  Method 1: Based on Assumptions 4,6, and 7 (S1>=S0)   ================
 
 # Step 1: estimate the principal scores P(S0=a, S1=b|G=g), P(Y1 = 1 | G=g),P(Y0 = 1 | G=g)
 y1.prob.1 <- rep(NA, 10)   # P(Y1 = 1 | G=g) = P(Y = 1 | G=g, A=1) 
@@ -610,7 +611,7 @@ lines(1:10, rep(psace.up[4],10), lwd = 1.5, col = 'black', lty = 2)
 
 
 
-# ---- Method 2: Based on Assumptions 5,6, and S1>=S0, Y1>=Y0  -------------
+# ======== Method 2: Based on Assumptions 4,5, and S1>=S0, Y1>=Y0 ============
 
 # Step 1: estimate P(S1, Y1 | G=g) and P(S0, Y0 | G=g)  
 s1.y1.prob.00 <- rep(NA, 10)   # P(S1 = 0, Y1 = 0 | G=g)
@@ -900,7 +901,7 @@ lines(1:10, psace.up[, 4], lwd = 1.5, col = 'black', lty = 2)
 
 
 
-# ---- Method 3: Based on Assumptions 5,6, and Y1>=Y0  -------------
+# ================ Method 3: Based on Assumptions 4,5, and Y1>=Y0  ================
 
 # Step 1: estimate P(S1, Y1 | G=g) and P(S0, Y0 | G=g)  
 s1.y1.prob.00 <- rep(NA, 10)   # P(S1 = 0, Y1 = 0 | G=g)
@@ -1189,7 +1190,7 @@ lines(1:10, psace.low[, 4], lwd = 1.5, col = 'black', lty = 2)
 lines(1:10, psace.up[, 4], lwd = 1.5, col = 'black', lty = 2)
 
 
-# ---------------  Method 4: Based on Assumptions 5,6  --------------------
+# ================ Method 4: Based on Assumptions 4,5  ================
 
 # step 1: estimate P(S1, Y1 | G=g) and P(S0, Y0 | G=g)  
 s1.y1.prob.00 <- rep(NA, 10)   # P(S1 = 0, Y1 = 0 | G=g)
